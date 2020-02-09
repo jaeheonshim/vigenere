@@ -33,5 +33,5 @@ document.getElementById("button-decrypt").addEventListener("click", function() {
     let text = document.getElementById("text-input").value;
     let key = document.getElementById("text-key").value;
     
-    displayResult("Encrypted text: " + decrypt(text, key));
+    displayResult("Decrypted text: " + decrypt(text, key));
 });
