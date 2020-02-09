@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Vigenere Cipher</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="card" style="width: 95%;margin-left: auto;margin-right: auto;margin-top: 26px;">
+        <div class="card-body">
+            <h4 class="card-title">Vigenere Cipher</h4>
+            <h6 class="text-muted card-subtitle mb-2">A polyalphabetic cipher using multiple caesar ciphers</h6>
+            <p class="card-text">A vigenere cipher is a method of encrypting alphabetic text by using a series of interwoven caesar ciphers. A message is encrypted using an alphabetic key, and that same key is needed to decrypt the encrypted message. Try it out below!</p>
+            <form>
+                <div class="form-group"><label>Message to encrypt/decrypt</label><textarea class="form-control" id="text-input"></textarea></div>
+                <div class="form-group"><label>Encryption/Decryption key</label><input class="form-control" type="text" id="text-key"></div>
+            </form>
+            <div class="btn-group" role="group" style="margin-left: auto;margin-right: auto;"><button class="btn btn-danger" id="button-encrypt">Encrypt</button><button class="btn btn-success" id="button-decrypt">Decrypt</button></div>
+            <p class="card-text" id="text-result" style="margin-top: 15px;font-size: 22px;"></p>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
